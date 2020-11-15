@@ -1,3 +1,3 @@
 # java-threads
 
-Project to study about Java Thread and concurrency programming
+Project to study about Java Threads and Concurrency programming
