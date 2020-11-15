@@ -16,8 +16,7 @@ public class MultiplyTask implements Runnable{
     }
 
     public void run() {
-        System.out.println("Thread name is: " + Thread.currentThread().getName());
-        System.out.println("Running MultiplyTask run()");
+        System.out.println("Running MultiplyTask " + Thread.currentThread().getName());
 
         long valor1 = Long.parseLong(first.getText());
         long valor2 = Long.parseLong(second.getText());
@@ -30,6 +29,6 @@ public class MultiplyTask implements Runnable{
         }
 
         result.setText(calculo.toString());
-        System.out.println("Ended MultiplyTask run()");
+        System.out.println("Ended MultiplyTask " + Thread.currentThread().getName());
     }
 }

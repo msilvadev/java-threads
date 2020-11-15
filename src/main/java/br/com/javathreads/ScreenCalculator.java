@@ -10,7 +10,7 @@ public class ScreenCalculator {
 
     public static void main(String[] args) {
 
-        JFrame janela = new JFrame("Time-consuming Multiplication");
+        JFrame window = new JFrame("Time-consuming Multiplication");
 
         JTextField first = new JTextField(10);
         JTextField second = new JTextField(10);
@@ -20,17 +20,17 @@ public class ScreenCalculator {
         // When click on the button will be executed the class ActionButton
         button.addActionListener(new ActionButton(first, second, result));
 
-        JPanel painel = new JPanel();
-        painel.add(first);
-        painel.add(new JLabel("x"));
-        painel.add(second);
-        painel.add(button);
-        painel.add(result);
+        JPanel panel = new JPanel();
+        panel.add(first);
+        panel.add(new JLabel("x"));
+        panel.add(second);
+        panel.add(button);
+        panel.add(result);
 
-        janela.add(painel);
-        janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        janela.pack();
-        janela.setVisible(true);
+        window.add(panel);
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.pack();
+        window.setVisible(true);
     }
 }
 
