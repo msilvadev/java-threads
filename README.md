@@ -15,4 +15,4 @@ will freeze screen. If set 'false' will create a new Thread to execute MultiplyT
 freeze screen. DEFAULT VALUE IS 'FALSE'.
 
 #### Run jar:
-`java -cp java-threads-1.0-SNAPSHOT.jar br.com.javathreads.ScreenCalculator`
+`java -cp java-threads.jar br.com.javathreads.ScreenCalculator`
