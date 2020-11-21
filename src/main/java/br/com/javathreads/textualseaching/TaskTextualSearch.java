@@ -22,7 +22,7 @@ public class TaskTextualSearch implements Runnable {
 
         try (Stream<String> input = Files.lines(path)) {
             input.forEach(line -> {
-                if (line.toUpperCase().contains(nameToFind.toUpperCase())) {
+                if (line.matches(nameToFind)) {
                     System.out.println("[" + Thread.currentThread().getName() + "]" + " | " + "File: " + path.getFileName() + " -> " + line);
                 }
             });
