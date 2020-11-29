@@ -12,13 +12,13 @@ public class TaskDataBaseAccessProcedure implements Runnable {
 
     @Override
     public void run() {
-        synchronized (tx) {
-            System.out.println("Beginning manager tx");
-            tx.begin();
+        synchronized (pool) {
+            System.out.println("Catch key pool");
+            pool.getConnection();
 
-            synchronized (pool) {
-                System.out.println("Catch key pool");
-                pool.getConnection();
+            synchronized (tx) {
+                System.out.println("Beginning manager tx");
+                tx.begin();
             }
         }
     }
